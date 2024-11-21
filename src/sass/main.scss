@@ -104,10 +104,10 @@ body {
 }
 
 .AboutMe {
-	min-height: 100vh;
 	padding: 13rem 9% 2rem;
 	color: $pure-white;
 	font-family: 'Sour Gummy', sans-serif;
+	margin-bottom: 5em;
 
 	&__box {
 		display: flex;
@@ -169,6 +169,44 @@ body {
 		width: 30rem;
 		height: 30rem;
 		border: 2px solid rgb(0, 157, 255);
+	}
+}
+
+.about {
+	.about__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		&__text {
+			font-family: 'Sour Gummy', sans-serif;
+			width: 80%;
+			&-h2 {
+				color: rgb(0, 157, 255);
+				font-size: 6rem;
+				text-align: center;
+				margin-bottom: 0.5em;
+			}
+
+			&-p {
+				color: #fff;
+				font-size: 1.8rem;
+				text-align: center;
+				margin-bottom: 2em;
+			}
+		}
+		&-img {
+			position: relative;
+			border-radius: 20px;
+			width: 30rem;
+			height: 40rem;
+			object-fit: cover;
+			object-position: bottom;
+			margin-bottom: 5em;
+			filter: blur(2px);
+			filter: sepia(5);
+		}
 	}
 }
 
@@ -362,7 +400,6 @@ body {
 }
 
 .contact {
-	height: 70vh;
 	font-family: 'Sour Gummy', sans-serif;
 	padding: 0 1em 0 1em;
 
@@ -441,10 +478,10 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		min-height: 100vh;
 		padding: 22rem 0 0;
 		color: $pure-white;
 		font-family: 'Sour Gummy', sans-serif;
+		margin-bottom: 10em;
 
 		&__box {
 			display: flex;
@@ -522,6 +559,26 @@ body {
 			height: 40rem;
 		}
 	}
+
+	.about {
+		.about__box {
+			flex-direction: row;
+
+			&__text {
+				order: 1;
+				width: 60%;
+				margin-left: 3em;
+				padding: 0.5em;
+				&-h2 {
+					font-size: 6rem;
+				}
+
+				&-p {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -576,6 +633,27 @@ body {
 			width: 50rem;
 			height: 50rem;
 			border: 2px solid rgb(0, 157, 255);
+		}
+	}
+
+	.about {
+		margin-bottom: 10em;
+		.about__box {
+			flex-direction: row;
+
+			&__text {
+				order: 1;
+				width: 60%;
+				margin-left: 3em;
+				padding: 0.5em;
+				&-h2 {
+					font-size: 7.2rem;
+				}
+
+				&-p {
+					font-size: 2.4rem;
+				}
+			}
 		}
 	}
 }
@@ -641,6 +719,25 @@ body {
 			height: 40rem;
 		}
 	}
+
+	.about {
+		.about__box {
+			&__text {
+				&-h2 {
+					font-size: 8rem;
+				}
+
+				&-p {
+					font-size: 2.4rem;
+				}
+			}
+
+			&-img {
+				width: 40rem;
+				height: 50rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 1400px) {
@@ -696,6 +793,33 @@ body {
 			height: 65rem;
 			border: 2px solid rgb(0, 157, 255);
 			margin-bottom: 3.5em;
+		}
+	}
+
+	.about {
+		margin-bottom: 10em;
+		.about__box {
+			flex-direction: row;
+
+			&__text {
+				order: 1;
+				width: 60%;
+				margin-left: 3em;
+				padding: 0.5em;
+				&-h2 {
+					font-size: 10rem;
+				}
+
+				&-p {
+					font-size: 2.8rem;
+				}
+			}
+
+			&-img {
+				border-radius: 20px;
+				width: 45rem;
+				height: 55rem;
+			}
 		}
 	}
 }
